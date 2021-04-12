@@ -1,0 +1,364 @@
+:root {
+  --color-red: #B2342A;
+  --color-red-dark: #752316;
+  --color-red-dark-after: #42150e;
+  --color-lead: #59595b;
+  --color-lead-dark: #44444a;
+  --color-lead-dark-after: #333;
+  --color-blue: #0A1A5C;
+  --color-blue-dark: #12122D;
+  --color-blue-dark-after: #071c75;
+  --color-blue-volare: #124482;
+  --color-blue-volare-dark: #0D3056;
+  --color-blue-orange: #E75110;
+}
+
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 15px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.admit-btn:active {
+  outline: 0px;
+  -webkit-appearance: none;
+  box-shadow: none;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type=file] {
+  cursor: pointer;
+  width: 100%;
+}
+input[type=file] label {
+  cursor: pointer;
+}
+
+.form-control {
+  padding: 5px 8px;
+  font-size: 13px;
+}
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border-color: #ced4da;
+}
+
+.admit-row {
+  display: block;
+  width: 100%;
+}
+
+.admit-col-1 {
+  padding: 0 10px;
+  width: 8.3333333333%;
+}
+
+.admit-col-2 {
+  padding: 0 10px;
+  width: 16.6666666667%;
+}
+
+.admit-col-3 {
+  padding: 0 10px;
+  width: 25%;
+}
+
+.admit-col-4 {
+  padding: 0 10px;
+  width: 33.3333333333%;
+}
+
+.admit-col-5 {
+  padding: 0 10px;
+  width: 41.6666666667%;
+}
+
+.admit-col-6 {
+  padding: 0 10px;
+  width: 50%;
+}
+
+.admit-col-7 {
+  padding: 0 10px;
+  width: 58.3333333333%;
+}
+
+.admit-col-8 {
+  padding: 0 10px;
+  width: 66.6666666667%;
+}
+
+.admit-col-9 {
+  padding: 0 10px;
+  width: 75%;
+}
+
+.admit-col-10 {
+  padding: 0 10px;
+  width: 83.3333333333%;
+}
+
+.admit-col-11 {
+  padding: 0 10px;
+  width: 91.6666666667%;
+}
+
+.admit-col-12 {
+  padding: 0 10px;
+  width: 100%;
+}
+
+@media (min-width: 990px) {
+  .admit-col-1,
+.admit-col-2,
+.admit-col-3,
+.admit-col-4,
+.admit-col-5,
+.admit-col-6,
+.admit-col-7,
+.admit-col-8,
+.admit-col-9,
+.admit-col-10,
+.admit-col-11,
+.admit-col-12 {
+    float: left;
+  }
+}
+.admit-text-left {
+  text-align: left;
+}
+
+.admit-text-center {
+  text-align: center;
+}
+
+.admit-text-right {
+  text-align: right;
+}
+
+.admit-text-justify {
+  text-align: justify;
+}
+
+.ademit-nowrap {
+  white-space: nowrap;
+}
+
+.admit-wrap {
+  white-space: normal;
+}
+
+.admit-content-center {
+  align-content: center;
+}
+
+.admit-content-init {
+  vertical-align: top;
+}
+
+.admit-content-end {
+  vertical-align: bottom;
+}
+
+.admit-content-middle {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.admit-title {
+  font-weight: normal;
+  line-height: 1;
+}
+
+h1,
+.admit-title-h1 {
+  font-size: 2.5rem;
+}
+
+h2,
+.admit-title-h2 {
+  font-size: 2rem;
+}
+
+h3,
+.admit-title-h3 {
+  font-size: 1.75rem;
+}
+
+h4,
+.admit-title-h4 {
+  font-size: 1.5rem;
+}
+
+h5,
+.admit-title-h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.admit-title-h6 {
+  font-size: 1rem;
+}
+
+.admit-btn {
+  display: inline-block;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1.2px solid transparent;
+  padding: 8px 16px;
+  font-size: 14px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius: 30px;
+  cursor: pointer;
+  min-width: 80px;
+}
+.admit-btn--lead {
+  color: #fff;
+  background-color: var(--color-lead);
+}
+.admit-btn--lead:hover {
+  background-color: var(--color-lead-dark);
+}
+.admit-btn--lead:active {
+  background-color: var(--color-lead-dark-after);
+}
+.admit-btn--lead_reversed {
+  color: var(--color-lead);
+  border-color: var(--color-lead);
+}
+.admit-btn--lead_reversed:hover {
+  color: #fff;
+  background-color: var(--color-lead-dark);
+}
+.admit-btn--lead_reversed:active {
+  background-color: var(--color-lead-dark-after);
+}
+.admit-btn--green {
+  color: #fff;
+  background-color: green;
+}
+.admit-btn--yellow {
+  background-color: yellow;
+}
+.admit-btn--blue {
+  color: #fff;
+  background-color: var(--color-blue);
+}
+.admit-btn--blue:hover {
+  background-color: var(--color-blue-dark);
+}
+.admit-btn--blue:active {
+  background-color: var(--color-blue-dark-after);
+}
+.admit-btn--blue_reversed {
+  color: var(--color-blue);
+  border-color: var(--color-blue);
+}
+.admit-btn--blue_reversed:hover {
+  color: #fff;
+  background-color: var(--color-blue);
+}
+.admit-btn--blue_reversed:active {
+  background-color: var(--color-blue-dark);
+}
+.admit-btn--red {
+  color: #fff;
+  background-color: var(--color-red);
+}
+.admit-btn--red:hover {
+  background-color: var(--color-red-dark);
+}
+.admit-btn--red:active {
+  background-color: var(--color-red-dark-after);
+}
+.admit-btn--red_reversed {
+  color: var(--color-red);
+  border-color: var(--color-red);
+}
+.admit-btn--red_reversed:hover {
+  color: #fff;
+  background-color: var(--color-red);
+}
+.admit-btn--red_reversed:active {
+  background-color: var(--color-red-dark-after);
+}
+.admit-btn--group {
+  width: 100%;
+}
+.admit-btn--group_left {
+  float: left;
+  width: 50%;
+  border-radius: 30px 0 0 30px;
+}
+.admit-btn--group_right {
+  float: right;
+  width: 50%;
+  border-radius: 0 30px 30px 0;
+}
+
+.admit-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=theme.css.map */

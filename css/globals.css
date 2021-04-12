@@ -1,0 +1,67 @@
+:root {
+  --color-red: #B2342A;
+  --color-red-dark: #752316;
+  --color-red-dark-after: #42150e;
+  --color-lead: #59595b;
+  --color-lead-dark: #44444a;
+  --color-lead-dark-after: #333;
+  --color-blue: #0A1A5C;
+  --color-blue-dark: #12122D;
+  --color-blue-dark-after: #071c75;
+  --color-blue-volare: #124482;
+  --color-blue-volare-dark: #0D3056;
+  --color-blue-orange: #E75110;
+}
+
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 15px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.admit-btn:active {
+  outline: 0px;
+  -webkit-appearance: none;
+  box-shadow: none;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=globals.css.map */

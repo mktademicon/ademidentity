@@ -1,0 +1,355 @@
+@import "globals.scss";
+
+.container {
+  min-height     : 100vh;
+  padding        : 0 0.5rem;
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items    : center;
+}
+
+input[type="file"] {
+  cursor: pointer;
+  width : 100%;
+
+  & label {
+    cursor: pointer;
+  }
+}
+
+.form-control {
+  padding  : 5px 8px;
+  font-size: 13px;
+
+  &:focus {
+    outline           : none;
+    box-shadow        : none;
+    -webkit-box-shadow: none;
+    border-color      : #ced4da;
+  }
+}
+
+.admit-row {
+  display: block;
+  width  : 100%;
+}
+
+.admit-col-1 {
+  padding: 0 10px;
+  width  : 8.333333333333334%;
+}
+
+.admit-col-2 {
+  padding: 0 10px;
+  width  : 16.666666666666668%;
+}
+
+.admit-col-3 {
+  padding: 0 10px;
+  width  : 25%;
+}
+
+.admit-col-4 {
+  padding: 0 10px;
+  width  : 33.333333333333336%;
+}
+
+.admit-col-5 {
+  padding: 0 10px;
+  width  : 41.66666666666667%;
+}
+
+.admit-col-6 {
+  padding: 0 10px;
+  width  : 50%;
+}
+
+.admit-col-7 {
+  padding: 0 10px;
+  width  : 58.333333333333336%;
+}
+
+.admit-col-8 {
+  padding: 0 10px;
+  width  : 66.66666666666667%;
+}
+
+.admit-col-9 {
+  padding: 0 10px;
+  width  : 75%;
+}
+
+.admit-col-10 {
+  padding: 0 10px;
+  width  : 83.33333333333334%;
+}
+
+.admit-col-11 {
+  padding: 0 10px;
+  width  : 91.66666666666667%;
+}
+
+.admit-col-12 {
+  padding: 0 10px;
+  width  : 100%;
+}
+
+@media (min-width: 990px) {
+
+  .admit-col-1,
+  .admit-col-2,
+  .admit-col-3,
+  .admit-col-4,
+  .admit-col-5,
+  .admit-col-6,
+  .admit-col-7,
+  .admit-col-8,
+  .admit-col-9,
+  .admit-col-10,
+  .admit-col-11,
+  .admit-col-12 {
+    float: left;
+  }
+}
+
+.admit-text-left {
+  text-align: left;
+}
+
+.admit-text-center {
+  text-align: center;
+}
+
+.admit-text-right {
+  text-align: right;
+}
+
+.admit-text-justify {
+  text-align: justify;
+}
+
+.ademit-nowrap {
+  white-space: nowrap;
+}
+
+.admit-wrap {
+  white-space: normal;
+}
+
+.admit-content-center {
+  align-content: center;
+}
+
+.admit-content-init {
+  vertical-align: top;
+}
+
+.admit-content-end {
+  vertical-align: bottom;
+}
+
+.admit-content-middle {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.admit-title {
+  font-weight: normal;
+  line-height: 1;
+}
+
+h1,
+.admit-title-h1 {
+  font-size: 2.5rem;
+}
+
+h2,
+.admit-title-h2 {
+  font-size: 2rem;
+}
+
+h3,
+.admit-title-h3 {
+  font-size: 1.75rem;
+}
+
+h4,
+.admit-title-h4 {
+  font-size: 1.5rem;
+}
+
+h5,
+.admit-title-h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.admit-title-h6 {
+  font-size: 1rem;
+}
+
+.admit-btn {
+  display            : inline-block;
+  color              : #212529;
+  text-align         : center;
+  vertical-align     : middle;
+  -webkit-user-select: none;
+  -moz-user-select   : none;
+  -ms-user-select    : none;
+  user-select        : none;
+  background-color   : transparent;
+  border             : 1.2px solid transparent;
+  padding            : 8px 16px;
+  font-size          : 14px;
+  transition         : color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius      : 30px;
+  cursor             : pointer;
+  min-width          : 80px;
+
+  &--lead {
+    color           : #fff;
+    background-color: var(--color-lead);
+
+    &:hover {
+      background-color: var(--color-lead-dark);
+    }
+
+    &:active {
+      background-color: var(--color-lead-dark-after);
+    }
+  }
+
+  &--lead_reversed {
+    color       : var(--color-lead);
+    border-color: var(--color-lead);
+
+    &:hover {
+      color           : #fff;
+      background-color: var(--color-lead-dark);
+    }
+
+    &:active {
+      background-color: var(--color-lead-dark-after);
+    }
+  }
+
+  &--green {
+    color           : #fff;
+    background-color: green;
+  }
+
+  &--yellow {
+    background-color: yellow;
+  }
+
+  &--blue {
+    color           : #fff;
+    background-color: var(--color-blue);
+
+    &:hover {
+      background-color: var(--color-blue-dark);
+    }
+
+    &:active {
+      background-color: var(--color-blue-dark-after);
+    }
+  }
+
+  &--blue_reversed {
+    color       : var(--color-blue);
+    border-color: var(--color-blue);
+
+    &:hover {
+      color           : #fff;
+      background-color: var(--color-blue);
+    }
+
+    &:active {
+      background-color: var(--color-blue-dark);
+    }
+  }
+
+  &--red {
+    color           : #fff;
+    background-color: var(--color-red);
+
+    &:hover {
+      background-color: var(--color-red-dark);
+    }
+
+    &:active {
+      background-color: var(--color-red-dark-after);
+    }
+  }
+
+  &--red_reversed {
+    color       : var(--color-red);
+    border-color: var(--color-red);
+
+    &:hover {
+      color           : #fff;
+      background-color: var(--color-red);
+    }
+
+    &:active {
+      background-color: var(--color-red-dark-after);
+    }
+  }
+
+  &--group {
+    width: 100%;
+
+    &_left {
+      float        : left;
+      width        : 50%;
+      border-radius: 30px 0 0 30px;
+    }
+
+    &_right {
+      float        : right;
+      width        : 50%;
+      border-radius: 0 30px 30px 0;
+    }
+  }
+}
+
+.admit-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.admit-money {}
+
+.admit-form {}
+
+.admit-form-label {}
+
+.admit-form-input {}
+
+.admit-form-file {}
+
+.admit-form-check {}
+
+.admit-animate {}
+
+.admit-animate-left-to-right {}
+
+.admit-animate-right-to-left {}
+
+.admit-animate-top-to-bottom {}
+
+.admit-animate-bottom-to-top {}
+
+.admit-animate-scale {}
+
+.admit-animate-grayscale {}
+
+.admit-style-gradient {}
+
+.admit-style-radius {}
