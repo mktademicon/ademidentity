@@ -6,35 +6,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ademidentity</title>
   <link rel="stylesheet" href="css/theme.css"/>
+  <script defer src="fontawesome/js/all_.js"></script>
+  <link rel="stylesheet" href="fontawesome/css/all.css"/>
 </head>
 
 <body>
-  <header class="admit-text-center">header HEADER</header>
+  <header class="admit-text--center admit-padding-2-8-4">header HEADER</header>
   <main>
-    <section class="admit-row">
-      <div class='admit-col-6 admit-text-center'>col 6</div>
-      <div class='admit-col-6 admit-text-center'>col 6</div>
+    <section class="admit-row admit-padding-2-8-4">
+      <div class='admit-col-6 admit-text--center'>col 6</div>
+      <div class='admit-col-6 admit-text--center'>col 6</div>
     </section>
-    <section class="admit-row admit-text-center">
-      <div class='admit-col-8'> 
-        <button class='admit-btn admit-btn--lead'>text</button>
-        <button class='admit-btn admit-btn--green'>text</button>
-        <button class='admit-btn admit-btn--yellow'>text</button>
-        <button class='admit-btn admit-btn--blue'>text</button>
-        <button class='admit-btn admit-btn--red'>text</button>
-        <button class='admit-btn admit-btn--red_reversed'>text</button>
-        <button class='admit-btn admit-btn--blue_reversed'>text</button>
-        <button class='admit-btn admit-btn--lead_reversed'>text</button>
+    <section class="admit-row admit-text--center admit-padding-2-8-4">
+      <div class='admit-col-8'>
+        <p>Padrão de botões '.admit-btn'</p>
+        <div class='admit-row admit-justify-content--center'>
+          <button class='admit-btn admit-btn--lead'>--lead</button>
+          <button class='admit-btn admit-btn--green'>--green</button>
+          <button class='admit-btn admit-btn--yellow'>--yellow</button>
+          <button class='admit-btn admit-btn--blue'>--blue</button>
+          <button class='admit-btn admit-btn--red'>--red</button>  
+        </div> 
+        <div class='admit-row admit-justify-content--center'>
+          <button class='admit-btn admit-btn--red_reversed'>--red_reversed</button>
+          <button class='admit-btn admit-btn--blue_reversed'>--blue_reversed</button>
+          <button class='admit-btn admit-btn--lead_reversed'>--lead_reversed</button>
+        </div> 
       </div>
       <div class='admit-col-4'> 
+        <p>Padrão de botões group '.admit-btn'</p> 
         <div class='admit-btn--group'>
           <a class='admit-btn admit-btn--group_left admit-btn--blue'>text</a>
           <a class='admit-btn admit-btn--group_right admit-btn--red'>text</a>
         </div>
       </div>
     </section>
+    <section class='admit-padding-2-8-4 admit-row'> 
+      <div class='admit-col-3 admit-text--center'>col 3</div>
+      <div class='admit-col-6'>
+        <form class='admit-form admit-row admit-hidden'>
+          <div class='admit-col-3 admit-padding--left-0'>
+            <label class='admit-form--label'>Texto:</label>
+            <input class='admit-form--input' type='text' placeholder='Texto'/>
+          </div>
+          <div class='admit-col-9 admit-padding--right-0'>
+            <label class='admit-form--label'>Texto:</label>
+            <input class='admit-form--input' type='text' placeholder='Texto'/>
+          </div>
+          <label class='admit-form--label'>Texto:</label>
+          <input class='admit-form--input' type='text' placeholder='Texto'/>
+          <label class='admit-form--label'>Texto:</label>
+          <input class='admit-form--input' type='text' placeholder='Texto'/>
+          <label class='admit-form--label'>Anexar Arquivo:</label>
+          <div class='admit-form--input admit-form--input_file' onclick="triggerFile()"> 
+            <i class="fas fa-plus"></i>
+            <div class='msg-file'>Anexe seu currículo aqui</div>
+            <div class='input-file'>
+              <input id='file_ipt' type="file"/>
+            </div>
+          </div>
+          <p class='admit-form--info'><i class="fas fa-asterisk"></i> Campos obrigatórios</p>
+          <button class='admit-btn admit-btn--red admit-btn-30'>Enviar</button>
+        </form>
+      </div>
+      <div class='admit-col-3 admit-text--center'>col 3</div>
+    </section>
   </main>
   <footer>footer</footer>
+  <script>
+		triggerFile = () => {
+			$('#file_ipt').trigger('click');
+			$('#file_ipt').change(function(ev) {
+				file = ev.target.files[0]
+				getBase64(file)
+			});
+		}
+	
+	  function getBase64(file) {
+	   var reader = new FileReader();
+	   reader.readAsDataURL(file);
+	   reader.onload = (result_) => {
+		   $('#file_name').val(file.name)
+		   $('.msg-file').val(file.name)
+		   $('#file_base64').val(result_.target.result)
+		 return true;
+	   };
+	   reader.onerror = function (error) {
+		 return false;
+	   };
+	}
+  </script>
 </body>
-
 </html>

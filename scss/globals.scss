@@ -34,6 +34,14 @@ ul {
   list-style: none;
 }
 
+section {
+  position: relative;
+}
+
+p {
+  word-wrap: break-word;
+}
+
 textarea:hover,
 input:hover,
 textarea:active,
@@ -50,6 +58,15 @@ label:focus,
   box-shadow        : none;
 }
 
+input[type="file"] {
+  cursor: pointer;
+  width : 100%;
+
+  & label {
+    cursor: pointer;
+  }
+}
+
 figure {
   margin: 0 0 1rem;
 }
@@ -62,4 +79,10 @@ img {
 svg {
   overflow      : hidden;
   vertical-align: middle;
+}
+
+footer {
+  bottom  : 0;
+  display : block;
+  width   : 100%;
 }

@@ -1,158 +1,406 @@
 @import "globals.scss";
 
-.container {
-  min-height     : 100vh;
-  padding        : 0 0.5rem;
-  display        : flex;
-  flex-direction : column;
-  justify-content: center;
-  align-items    : center;
-}
-
-input[type="file"] {
-  cursor: pointer;
-  width : 100%;
-
-  & label {
-    cursor: pointer;
-  }
-}
-
-.form-control {
-  padding  : 5px 8px;
-  font-size: 13px;
-
-  &:focus {
-    outline           : none;
-    box-shadow        : none;
-    -webkit-box-shadow: none;
-    border-color      : #ced4da;
-  }
-}
-
+// Colunas
 .admit-row {
-  display: block;
-  width  : 100%;
+  display  : flex;
+  flex-wrap: wrap;
+  width    : 100%;
 }
 
-.admit-col-1 {
-  padding: 0 10px;
-  width  : 8.333333333333334%;
-}
+.admit-col {
+  &-1 {
+    padding: 0 10px;
+    width  : 8.333333333333334%;
+  }
 
-.admit-col-2 {
-  padding: 0 10px;
-  width  : 16.666666666666668%;
-}
+  &-2 {
+    padding: 0 10px;
+    width  : 16.666666666666668%;
+  }
 
-.admit-col-3 {
-  padding: 0 10px;
-  width  : 25%;
-}
+  &-3 {
+    padding: 0 10px;
+    width  : 25%;
+  }
 
-.admit-col-4 {
-  padding: 0 10px;
-  width  : 33.333333333333336%;
-}
+  &-4 {
+    padding: 0 10px;
+    width  : 33.333333333333336%;
+  }
 
-.admit-col-5 {
-  padding: 0 10px;
-  width  : 41.66666666666667%;
-}
+  &-5 {
+    padding: 0 10px;
+    width  : 41.66666666666667%;
+  }
 
-.admit-col-6 {
-  padding: 0 10px;
-  width  : 50%;
-}
+  &-6 {
+    padding: 0 10px;
+    width  : 50%;
+  }
 
-.admit-col-7 {
-  padding: 0 10px;
-  width  : 58.333333333333336%;
-}
+  &-7 {
+    padding: 0 10px;
+    width  : 58.333333333333336%;
+  }
 
-.admit-col-8 {
-  padding: 0 10px;
-  width  : 66.66666666666667%;
-}
+  &-8 {
+    padding: 0 10px;
+    width  : 66.66666666666667%;
+  }
 
-.admit-col-9 {
-  padding: 0 10px;
-  width  : 75%;
-}
+  &-9 {
+    padding: 0 10px;
+    width  : 75%;
+  }
 
-.admit-col-10 {
-  padding: 0 10px;
-  width  : 83.33333333333334%;
-}
+  &-10 {
+    padding: 0 10px;
+    width  : 83.33333333333334%;
+  }
 
-.admit-col-11 {
-  padding: 0 10px;
-  width  : 91.66666666666667%;
-}
+  &-11 {
+    padding: 0 10px;
+    width  : 91.66666666666667%;
+  }
 
-.admit-col-12 {
-  padding: 0 10px;
-  width  : 100%;
-}
-
-@media (min-width: 990px) {
-
-  .admit-col-1,
-  .admit-col-2,
-  .admit-col-3,
-  .admit-col-4,
-  .admit-col-5,
-  .admit-col-6,
-  .admit-col-7,
-  .admit-col-8,
-  .admit-col-9,
-  .admit-col-10,
-  .admit-col-11,
-  .admit-col-12 {
-    float: left;
+  &-12 {
+    padding: 0 10px;
+    width  : 100%;
   }
 }
 
-.admit-text-left {
-  text-align: left;
+@media (min-width: 994px) {
+  .admit-col {
+
+    &-1,
+    &-2,
+    &-3,
+    &-4,
+    &-5,
+    &-6,
+    &-7,
+    &-8,
+    &-9,
+    &-10,
+    &-11,
+    &-12 {
+      float  : left;
+      padding: 0 8px;
+    }
+  }
 }
 
-.admit-text-center {
-  text-align: center;
+.container {
+  width        : 100%;
+  padding-right: 15px;
+  padding-left : 15px;
+  margin-right : auto;
+  margin-left  : auto;
+
+  @media (min-width: 576px) {
+    & {
+      max-width: 540px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    & {
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: 994px) {
+    & {
+      max-width: 960px;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    & {
+      max-width: 1140px;
+    }
+  }
 }
 
-.admit-text-right {
-  text-align: right;
+// Displays - Positions - Hidden
+.admit-flex {
+  display: flex;
+
+  &--container {
+    min-height     : 100vh;
+    padding        : 0 0.5rem;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+  }
+
+  &--start {
+    -ms-flex-line-pack: start !important;
+    align-content     : flex-start !important;
+  }
+
+  &--end {
+    -ms-flex-line-pack: end !important;
+    align-content     : flex-end !important;
+  }
+
+  &--row {
+    -ms-flex-direction: row !important;
+    flex-direction    : row !important;
+  }
+
+  &--column {
+    -ms-flex-direction: column !important;
+    flex-direction    : column !important;
+  }
+
+  &--row_reverse {
+    -ms-flex-direction: row-reverse !important;
+    flex-direction    : row-reverse !important;
+  }
+
+  &--column_reverse {
+    -ms-flex-direction: column-reverse !important;
+    flex-direction    : column-reverse !important;
+  }
+
+  &--wrap {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap    : wrap !important;
+  }
+
+  &--nowrap {
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap    : nowrap !important;
+  }
+
+  &--wrap_reverse {
+    -ms-flex-wrap: wrap-reverse !important;
+    flex-wrap    : wrap-reverse !important;
+  }
 }
 
-.admit-text-justify {
-  text-align: justify;
+.admit-absolute {
+  position: absolute;
 }
 
-.ademit-nowrap {
-  white-space: nowrap;
+.admit-fixed {
+  position: fixed;
 }
 
-.admit-wrap {
-  white-space: normal;
+.admit-relative {
+  position: relative;
 }
 
-.admit-content-center {
-  align-content: center;
+.admit-visible {
+  display: block;
 }
 
-.admit-content-init {
-  vertical-align: top;
+.admit-invisible {
+  display: none;
 }
 
-.admit-content-end {
-  vertical-align: bottom;
+.admit-hidden {
+  overflow: hidden;
 }
 
-.admit-content-middle {
-  vertical-align: middle;
+// Alinhamento - Posições - Quebra de linha no Texto
+.admit-text {
+  &--left {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--justify {
+    text-align: justify;
+  }
+
+  &--nowrap {
+    white-space: nowrap;
+  }
+
+  &--wrap {
+    white-space: normal;
+  }
+
+  &--bolder {
+    font-weight: bold;
+  }
 }
 
+.admit-content {
+  &--init {
+    vertical-align: top;
+  }
+
+  &--end {
+    vertical-align: bottom;
+  }
+
+  &--middle {
+    vertical-align: middle;
+  }
+
+  &--center {
+    -ms-flex-line-pack: center !important;
+    align-content     : center !important;
+  }
+
+  &--between {
+    -ms-flex-line-pack: justify !important;
+    align-content     : space-between !important;
+  }
+
+  &--around {
+    -ms-flex-line-pack: distribute !important;
+    align-content     : space-around !important;
+  }
+
+  &--stretch {
+    -ms-flex-line-pack: stretch !important;
+    align-content     : stretch !important;
+  }
+}
+
+.admit-justify-content {
+  &--start {
+    -ms-flex-pack  : start !important;
+    justify-content: flex-start !important;
+  }
+
+  &--end {
+    -ms-flex-pack  : end !important;
+    justify-content: flex-end !important;
+  }
+
+  &--center {
+    -ms-flex-pack  : center !important;
+    justify-content: center !important;
+  }
+
+  &--between {
+    -ms-flex-pack  : justify !important;
+    justify-content: space-between !important;
+  }
+
+  &--around {
+    -ms-flex-pack  : distribute !important;
+    justify-content: space-around !important;
+  }
+}
+
+.align-items {
+  &--start {
+    -ms-flex-align: start !important;
+    align-items   : flex-start !important;
+  }
+
+  &--end {
+    -ms-flex-align: end !important;
+    align-items   : flex-end !important;
+  }
+
+  &--center {
+    -ms-flex-align: center !important;
+    align-items   : center !important;
+  }
+
+  &--baseline {
+    -ms-flex-align: baseline !important;
+    align-items   : baseline !important;
+  }
+
+  &--stretch {
+    -ms-flex-align: stretch !important;
+    align-items   : stretch !important;
+  }
+}
+
+// Espaçamentos
+.admit-padding {
+
+  &--site {
+    padding: 0 8%;
+  }
+
+  &--top_bottom {
+    padding: 4% 0;
+  }
+
+  &--top-8 {
+    padding-top: 8%;
+  }
+
+  &--top-4 {
+    padding-top: 4%;
+  }
+
+  &--bottom-2 {
+    padding-bottom: 2%;
+  }
+
+  &--bottom-4 {
+    padding-bottom: 4%;
+  }
+
+  &--bottom-8 {
+    padding-bottom: 8%;
+  }
+
+  &--bottom-10 {
+    padding-bottom: 10px;
+  }
+
+  &-4-8 {
+    padding: 4% 8%;
+  }
+
+  &-2-8 {
+    padding: 2% 8%;
+  }
+
+  &-2-8-4 {
+    padding: 2% 8% 4%;
+  }
+
+  &-0 {
+    padding: 0;
+  }
+
+  &--right-0 {
+    padding-right: 0;
+  }
+
+  &--right-8 {
+    padding-right: 8%;
+  }
+
+  &--right-20 {
+    padding-right: 20px;
+  }
+
+  &--left-15 {
+    padding-left: 15%;
+  }
+
+  &--left-10 {
+    padding-left: 10px;
+  }
+
+  &--left-0 {
+    padding-left: 0;
+  }
+}
+
+// Títulos
 h1,
 h2,
 h3,
@@ -194,6 +442,7 @@ h6,
   font-size: 1rem;
 }
 
+// Botões
 .admit-btn {
   display            : inline-block;
   color              : #212529;
@@ -211,6 +460,7 @@ h6,
   border-radius      : 30px;
   cursor             : pointer;
   min-width          : 80px;
+  margin-top         : 5px;
 
   &--lead {
     color           : #fff;
@@ -317,39 +567,146 @@ h6,
       border-radius: 0 30px 30px 0;
     }
   }
+
+  &-100 {
+    width: 100%;
+  }
+
+  &-30 {
+    width: 30%;
+  }
+
+  &-50 {
+    width: 50%;
+  }
 }
 
+// Imagens
 .admit-image {
   max-width: 100%;
-  height: auto;
+  height   : auto;
 }
 
-.admit-money {}
+// Dinheiro
+.admit-money {
+  margin     : 0;
+  position   : relative;
+  font-weight: 700;
 
-.admit-form {}
+  & small {
+    font-weight: 400;
+    position   : relative;
+  }
+}
 
-.admit-form-label {}
+// Fomulários - Inputs - Labels 
+.admit-form {
+  border       : 1px solid transparent;
+  border-radius: 10px;
+  margin       : 0;
+  padding      : 8px;
 
-.admit-form-input {}
+  &--label {
+    display  : inline-block;
+    font-size: 11px;
+    position : relative;
+    top      : 2px;
+    left     : 18px;
+  }
 
-.admit-form-file {}
+  &--input {
+    padding      : 8px 16px;
+    background   : #f9f9f9;
+    border-radius: 30px;
+    border       : 1px solid transparent;
+    color        : #222;
+    margin       : 5px 0;
+    width        : 100%;
 
-.admit-form-check {}
+    &::placeholder {
+      color    : #999;
+      font-size: 13px;
+    }
 
-.admit-animate {}
+    &_file {
+      cursor  : pointer;
+      position: relative;
+      min-width  : 41.66666666666667%;
 
-.admit-animate-left-to-right {}
+      & .msg-file {
+        color    : #999;
+        font-size: 13px;
+      }
 
-.admit-animate-right-to-left {}
+      & i {
+        position : absolute!important;
+        font-size: 13px!important;
+        right    : 0;
+        padding  : 7px 13px;
+      }
 
-.admit-animate-top-to-bottom {}
+      & .input-file {
+        width   : 0px;
+        height  : 0px;
+        overflow: hidden;
+      }
+    }
+  }
 
-.admit-animate-bottom-to-top {}
+  &--check {
+    display: none
+  }
 
-.admit-animate-scale {}
+  & .admit-btn {
+    margin-left: auto;
+  }
 
-.admit-animate-grayscale {}
+  &--info {
+    padding  : 15px 0 0 20px;
+    font-size: 11px;
+  }
 
-.admit-style-gradient {}
+  & i {
+    font-size: 6px;
+    color    : var(--color-red);
+    position : relative;
+    bottom   : 3px;
+  }
+}
 
-.admit-style-radius {}
+// Animações
+.admit-animate {
+  display: none
+}
+
+.admit-animate-left-to-right {
+  display: none
+}
+
+.admit-animate-right-to-left {
+  display: none
+}
+
+.admit-animate-top-to-bottom {
+  display: none
+}
+
+.admit-animate-bottom-to-top {
+  display: none
+}
+
+.admit-animate-scale {
+  display: none
+}
+
+.admit-animate-grayscale {
+  display: none
+}
+
+.admit-style-gradient {
+  display: none
+}
+
+.admit-style-radius {
+  display: none
+}
