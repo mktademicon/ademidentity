@@ -295,44 +295,44 @@ footer {
   align-content: stretch !important;
 }
 
-.admit-justify-content--start {
+.admit-justify--content_start {
   -ms-flex-pack: start !important;
   justify-content: flex-start !important;
 }
-.admit-justify-content--end {
+.admit-justify--content_end {
   -ms-flex-pack: end !important;
   justify-content: flex-end !important;
 }
-.admit-justify-content--center {
+.admit-justify--content_center {
   -ms-flex-pack: center !important;
   justify-content: center !important;
 }
-.admit-justify-content--between {
+.admit-justify--content_between {
   -ms-flex-pack: justify !important;
   justify-content: space-between !important;
 }
-.admit-justify-content--around {
+.admit-justify--content_around {
   -ms-flex-pack: distribute !important;
   justify-content: space-around !important;
 }
 
-.align-items--start {
+.admit-align--items_start {
   -ms-flex-align: start !important;
   align-items: flex-start !important;
 }
-.align-items--end {
+.admit-align--items_end {
   -ms-flex-align: end !important;
   align-items: flex-end !important;
 }
-.align-items--center {
+.admit-align--items_center {
   -ms-flex-align: center !important;
   align-items: center !important;
 }
-.align-items--baseline {
+.admit-align--items_baseline {
   -ms-flex-align: baseline !important;
   align-items: baseline !important;
 }
-.align-items--stretch {
+.admit-align--items_stretch {
   -ms-flex-align: stretch !important;
   align-items: stretch !important;
 }
@@ -607,7 +607,21 @@ h6,
   overflow: hidden;
 }
 .admit-form--check {
-  display: none;
+  border: 1px solid var(--color-red-dark);
+  padding: 0 9px;
+  margin-right: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: left;
+  margin-top: 2px;
+  height: 20px;
+  position: relative;
+}
+.admit-form--check i {
+  color: #fff !important;
+  left: 3px;
+  position: absolute !important;
+  font-size: 13px !important;
 }
 .admit-form .admit-btn {
   margin-left: auto;
