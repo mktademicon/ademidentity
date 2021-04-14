@@ -86,6 +86,13 @@ footer {
   width: 100%;
 }
 
+@media screen and (min-width: 1400px) {
+  html,
+body {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}
 .adt-animate {
   width: 100px;
   height: 100px;

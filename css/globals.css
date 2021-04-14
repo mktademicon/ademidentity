@@ -86,4 +86,12 @@ footer {
   width: 100%;
 }
 
+@media screen and (min-width: 1400px) {
+  html,
+body {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}
+
 /*# sourceMappingURL=globals.css.map */

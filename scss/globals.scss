@@ -10,7 +10,7 @@
   --color-blue-dark-after : #071c75;
   --color-blue-volare     : #124482;
   --color-blue-volare-dark: #0D3056;
-  --color-orange     : #E75110;
+  --color-orange          : #E75110;
 }
 
 html,
@@ -82,7 +82,16 @@ svg {
 }
 
 footer {
-  bottom  : 0;
-  display : block;
-  width   : 100%;
+  bottom : 0;
+  display: block;
+  width  : 100%;
+}
+
+@media screen and (min-width: 1400px) {
+
+  html,
+  body{
+    max-width : 1500px;
+    margin: 0 auto;
+  }
 }
