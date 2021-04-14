@@ -1,124 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ademidentity</title>
   <link rel="stylesheet" href="css/theme.css" />
-  <script defer src="fontawesome/js/all_.js"></script>
   <link rel="stylesheet" href="fontawesome/css/all.css" />
+  <script src="js/library.js" type="text/javascript"></script>
+  <script src="js/scripts.js" type="text/javascript"></script>
 </head>
 
 <body>
-  <header class="admit-text--center admit-padding-2-8-4">header HEADER</header>
+  <header class="adt-text--center adt-padding-2-8-4">header HEADER</header>
   <main>
-    <section class="admit-row admit-padding-2-8-4">
-      <div class='admit-col-6 admit-text--center'>col 6</div>
-      <div class='admit-col-6 admit-text--center'>col 6</div>
+    <section class="adt-row adt-padding-2-8-4">
+      <div class='adt-col-6 adt-text--center'>col 6</div>
+      <div class='adt-col-6 adt-text--center'>col 6</div>
     </section>
-    <section class="admit-row admit-text--center admit-padding-2-8-4">
-      <div class='admit-col-8'>
-        <p>Padrão de botões '.admit-btn'</p>
-        <div class='admit-row admit-justify-content--center'>
-          <button class='admit-btn admit-btn--lead'>--lead</button>
-          <button class='admit-btn admit-btn--green'>--green</button>
-          <button class='admit-btn admit-btn--yellow'>--yellow</button>
-          <button class='admit-btn admit-btn--blue'>--blue</button>
-          <button class='admit-btn admit-btn--red'>--red</button>
+    <section class="adt-row adt-text--center adt-padding-2-8-4">
+      <div class='adt-col-8 adt-col--sm-12'>
+        <p>Padrão de botões '.adt-btn'</p>
+        <div class='adt-row adt-justify-content--center'>
+          <button class='adt-btn adt-btn--lead'>--lead</button>
+          <button class='adt-btn adt-btn--green'>--green</button>
+          <button class='adt-btn adt-btn--yellow'>--yellow</button>
+          <button class='adt-btn adt-btn--blue'>--blue</button>
+          <button class='adt-btn adt-btn--red'>--red</button>
         </div>
-        <div class='admit-row admit-justify-content--center'>
-          <button class='admit-btn admit-btn--red_reversed'>--red_reversed</button>
-          <button class='admit-btn admit-btn--blue_reversed'>--blue_reversed</button>
-          <button class='admit-btn admit-btn--lead_reversed'>--lead_reversed</button>
+        <div class='adt-row adt-justify-content--center'>
+          <button class='adt-btn adt-btn--red_reversed'>--red_reversed</button>
+          <button class='adt-btn adt-btn--blue_reversed'>--blue_reversed</button>
+          <button class='adt-btn adt-btn--lead_reversed'>--lead_reversed</button>
         </div>
       </div>
-      <div class='admit-col-4'>
-        <p>Padrão de botões group '.admit-btn'</p>
-        <div class='admit-btn--group'>
-          <a class='admit-btn admit-btn--group_left admit-btn--blue'>text</a>
-          <a class='admit-btn admit-btn--group_right admit-btn--red'>text</a>
+      <div class='adt-col-4 adt-col--sm-12'>
+        <p>Padrão de botões group '.adt-btn'</p>
+        <div class='adt-btn--group'>
+          <a class='adt-btn adt-btn--group_left adt-btn--blue'>text</a>
+          <a class='adt-btn adt-btn--group_right adt-btn--red'>text</a>
         </div>
       </div>
     </section>
-    <section class='admit-padding-2-8-4 admit-row'>
-      <div class='admit-col-3 admit-text--center'>col 3</div>
-      <div class='admit-col-6'>
-        <form class='admit-form admit-row admit-hidden'>
-          <div class='admit-col-3 admit-padding--left-0'>
-            <label class='admit-form--label'>Texto:</label>
-            <input class='admit-form--input' type='text' placeholder='Texto' />
+    <section class='adt-padding-2-8-4 adt-row'>
+      <div class='adt-col-3 adt-text--center'>col 3</div>
+      <div class='adt-col-6 adt-col--sm-12'>
+        <form class='adt-form adt-row adt-hidden'>
+          <div class='adt-col-3 adt-padding--left-0'>
+            <label class='adt-form--label'>Texto:</label>
+            <input class='adt-form--input' type='text' placeholder='Texto' />
           </div>
-          <div class='admit-col-9 admit-padding--right-0'>
-            <label class='admit-form--label'>Texto:</label>
-            <input class='admit-form--input' type='text' placeholder='Texto' />
+          <div class='adt-col-9 adt-padding--right-0'>
+            <label class='adt-form--label'>Texto:</label>
+            <input class='adt-form--input' type='text' placeholder='Texto' />
           </div>
-          <label class='admit-form--label'>Texto:</label>
-          <input class='admit-form--input' type='text' placeholder='Texto' />
-          <label class='admit-form--label'>Texto:</label>
-          <input class='admit-form--input' type='text' placeholder='Texto' />
-          <div class='admit-row'>
-            <div class='admit-col-6 admit-flex admit-align--items_center admit-justify--content_center'>
-              <span id='checkbox' class="admit-form--check" data-status="false" onclick="check()">
+          <label class='adt-form--label'>Texto:</label>
+          <input class='adt-form--input' type='text' placeholder='Texto' />
+          <label class='adt-form--label'>Texto:</label>
+          <input class='adt-form--input' type='text' placeholder='Texto' />
+          <div class='adt-row'>
+            <div class='adt-col-6 adt-flex adt-align--items_center adt-justify--content_center'>
+              <span id='checkbox' class="adt-form--check" data-status="false" onclick="check()">
                 <i class="fas fa-check"></i>
               </span>
             </div>
-            <div class='admit-col-6'>
-              <label class='admit-form--label'>Anexar Arquivo:</label>
-              <div class='admit-form--input admit-form--input_file' onclick="triggerFile()">
+            <div class='adt-col-6'>
+              <label class='adt-form--label'>Anexar Arquivo:</label>
+              <div class='adt-form--input adt-form--input_file' >
                 <i class="fas fa-plus"></i>
-                <div class='msg-file'>Nenhum arquivo</div>
+                <div class='msg-file' onclick="triggerFile()">Nenhum arquivo</div>
                 <div class='input-file'>
-                  <input id='file_ipt' type="file" />
+                  <input id="upload" type="file"/>
                 </div>
               </div>
             </div>
           </div>
-          <p class='admit-form--info'><i class="fas fa-asterisk"></i> Campos obrigatórios</p>
-          <button class='admit-btn admit-btn--red admit-btn-30'>Enviar</button>
+          <p class='adt-form--info'><i class="fas fa-asterisk"></i> Campos obrigatórios</p>
+          <button class='adt-btn adt-btn--red adt-btn-30'>Enviar</button>
         </form>
       </div>
-      <div class='admit-col-3 admit-text--center'>col 3</div>
+      <div class='adt-col-3 adt-text--center'>col 3 </div>
+    </section>
+    <section class='adt-row adt-padding-4-8'>
+      <div class='adt-col-3 adt-col--sm-7 adt-spacing-sm--bottom-8 adt-flex adt-flex--column adt-justify--content_center adt-align--items_center'>
+        <p>Animate</p></br>
+        <div class='adt-animate'></div>
+      </div>
+      <div class='adt-col-3 adt-col--sm-5 adt-spacing-sm--bottom-8 adt-flex adt-flex--column adt-justify--content_center adt-align--items_center'>
+        <p>Right to Left</p></br>
+        <div class='adt-animate--right_to_left'></div>
+      </div>
+      <div class='adt-col-3 adt-col--sm-5 adt-flex adt-flex--column adt-justify--content_center adt-align--items_center'>
+        <p>Left to Right</p></br>
+        <div class='adt-animate--left_to_right'></div>
+      </div>
+      <div class='adt-col-3 adt-col--sm-7 adt-flex adt-flex--column adt-justify--content_center adt-align--items_center'>
+        <p>Scala</p></br>
+        <div class='adt-animate--scale'></div>
+      </div>
+    </section>
+    <section class='adt-row adt-padding-4-8 adt-hidden'>
+      <div class='adt-col-1 adt-col--sm-none'></div>
+      <div class='adt-col-2 adt-col--sm-5 adt-flex adt-flex--column adt-justify--content_center adt-align--items_center'>
+        <p>Top to Bottom</p></br>
+        <div class='adt-animate--top_to_bottom'></div>
+      </div>
+      <div class='adt-col-2 adt-col--sm-4 adt-flex adt-flex--column adt-justify--content_center adt-align--items_center'>
+        <p>Bottom to Top</p></br>
+        <div class='adt-animate--bottom_to_top'></div>
+      </div>
+      <div class='adt-col-2 adt-col--sm-12 adt-spacing-sm--top-80 adt-spacing-sm--bottom-8 adt-flex adt-flex--column adt-justify--content_center adt-align--items_center'>
+        <p>Escala em Cinza</p></br>
+        <div class='adt-animate--grayscale'></div>
+      </div>
+      <div class='adt-col-2 adt-col--sm-6 adt-flex adt-flex--column adt-justify--content_center adt-align--items_center'>
+        <p>Gradiente</p></br>
+        <div class='adt-animate--style_gradient'></div>
+      </div>
+      <div class='adt-col-2 adt-col--sm-6 adt-flex adt-flex--column adt-justify--content_center adt-align--items_center'>
+        <p>Border Radius</p></br>
+        <div class='adt-animate--style_radius'></div>
+      </div>
+      <div class='adt-col-1 adt-col--sm-none'></div>
     </section>
   </main>
   <footer>footer</footer>
-  <script src="library.js" type="text/javascript"></script>
-  <script>
-    function triggerFile() {
-      $('#file_ipt').trigger('click');
-      $('#file_ipt').change(function (ev) {
-        file = ev.target.files[0]
-        getBase64(file)
-      });
-    }
-
-    function getBase64(file) {
-      var reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = (result_) => {
-        $('.msg-file').val(file.name)
-        
-        return true;
-      };
-      reader.onerror = function (error) {
-        return false;
-      };
-    }
-    
-    function check() {
-      var checking = document.getElementById('checkbox');
-      var change = checking.getAttribute('data-status');
-
-      if (change == 'false') {
-        checking.setAttribute('data-status', 'true');
-        checking.style.backgroundColor = 'var(--color-red)';  
-      }else {
-        checking.setAttribute('data-status', 'false');  
-        checking.style.backgroundColor = '#fff';  
-      }
-    }
-  </script>
 </body>
-
 </html>

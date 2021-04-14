@@ -1,0 +1,111 @@
+// Displays - Positions - Hidden
+.adt-flex {
+  display: flex;
+
+  &--container {
+    min-height     : 100vh;
+    padding        : 0 0.5rem;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+  }
+
+  &--start {
+    -ms-flex-line-pack: start !important;
+    align-content     : flex-start !important;
+  }
+
+  &--end {
+    -ms-flex-line-pack: end !important;
+    align-content     : flex-end !important;
+  }
+
+  &--row {
+    -ms-flex-direction: row !important;
+    flex-direction    : row !important;
+  }
+
+  &--column {
+    -ms-flex-direction: column !important;
+    flex-direction    : column !important;
+  }
+
+  &--row_reverse {
+    -ms-flex-direction: row-reverse !important;
+    flex-direction    : row-reverse !important;
+  }
+
+  &--column_reverse {
+    -ms-flex-direction: column-reverse !important;
+    flex-direction    : column-reverse !important;
+  }
+
+  &--wrap {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap    : wrap !important;
+  }
+
+  &--nowrap {
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap    : nowrap !important;
+  }
+
+  &--wrap_reverse {
+    -ms-flex-wrap: wrap-reverse !important;
+    flex-wrap    : wrap-reverse !important;
+  }
+}
+.adt-justify--content {
+  &_start {
+    -ms-flex-pack  : start !important;
+    justify-content: flex-start !important;
+  }
+
+  &_end {
+    -ms-flex-pack  : end !important;
+    justify-content: flex-end !important;
+  }
+
+  &_center {
+    -ms-flex-pack  : center !important;
+    justify-content: center !important;
+  }
+
+  &_between {
+    -ms-flex-pack  : justify !important;
+    justify-content: space-between !important;
+  }
+
+  &_around {
+    -ms-flex-pack  : distribute !important;
+    justify-content: space-around !important;
+  }
+}
+
+.adt-align--items {
+  &_start {
+    -ms-flex-align: start !important;
+    align-items   : flex-start !important;
+  }
+
+  &_end {
+    -ms-flex-align: end !important;
+    align-items   : flex-end !important;
+  }
+
+  &_center {
+    -ms-flex-align: center !important;
+    align-items   : center !important;
+  }
+
+  &_baseline {
+    -ms-flex-align: baseline !important;
+    align-items   : baseline !important;
+  }
+
+  &_stretch {
+    -ms-flex-align: stretch !important;
+    align-items   : stretch !important;
+  }
+}

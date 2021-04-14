@@ -1,0 +1,89 @@
+// Fomulários - Inputs - Labels 
+.adt-form {
+  border       : 1px solid transparent;
+  border-radius: 10px;
+  margin       : 0;
+  padding      : 8px;
+
+  &--label {
+    display  : inline-block;
+    font-size: 11px;
+    position : relative;
+    top      : 2px;
+    left     : 18px;
+  }
+
+  &--input {
+    padding      : 8px 16px;
+    background   : #f9f9f9;
+    border-radius: 30px;
+    border       : 1px solid transparent;
+    color        : #222;
+    margin       : 5px 0;
+    width        : 100%;
+
+    &::placeholder {
+      color    : #999;
+      font-size: 13px;
+    }
+
+    &_file {
+      cursor   : pointer;
+      position : relative;
+      min-width: 41.66666666666667%;
+
+      & .msg-file {
+        color    : #999;
+        font-size: 13px;
+      }
+
+      & i {
+        position : absolute !important;
+        font-size: 13px !important;
+        right    : 0;
+        padding  : 7px 13px;
+      }
+
+      & .input-file {
+        width   : 0px;
+        height  : 0px;
+        overflow: hidden;
+      }
+    }
+  }
+
+  &--check {
+    border       : 1px solid var(--color-red-dark);
+    padding      : 0 9px;
+    margin-right : 4px;
+    border-radius: 5px;
+    cursor       : pointer;
+    float        : left;
+    margin-top   : 2px;
+    height       : 20px;
+    position     : relative;
+
+    & i {
+      color    : #fff !important;
+      left     : 3px;
+      position : absolute !important;
+      font-size: 13px !important;
+    }
+  }
+
+  & .adt-btn {
+    margin-left: auto;
+  }
+
+  &--info {
+    padding  : 15px 0 0 20px;
+    font-size: 11px;
+  }
+
+  & i {
+    font-size: 6px;
+    color    : var(--color-red);
+    position : relative;
+    bottom   : 3px;
+  }
+}

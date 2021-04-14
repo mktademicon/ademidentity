@@ -1365,6 +1365,9 @@ readers do not read off random characters that represent icons */
 .fa-check:before {
   content: "\f00c"; }
 
+.fak-lion:before {
+  content: "\f0000c"; }
+
 .fa-check-circle:before {
   content: "\f058"; }
 

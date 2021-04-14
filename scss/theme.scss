@@ -1,94 +1,11 @@
 @import "globals.scss";
-
-// Colunas
-.admit-row {
-  display  : flex;
-  flex-wrap: wrap;
-  width    : 100%;
-}
-
-.admit-col {
-  &-1 {
-    padding: 0 10px;
-    width  : 8.333333333333334%;
-  }
-
-  &-2 {
-    padding: 0 10px;
-    width  : 16.666666666666668%;
-  }
-
-  &-3 {
-    padding: 0 10px;
-    width  : 25%;
-  }
-
-  &-4 {
-    padding: 0 10px;
-    width  : 33.333333333333336%;
-  }
-
-  &-5 {
-    padding: 0 10px;
-    width  : 41.66666666666667%;
-  }
-
-  &-6 {
-    padding: 0 10px;
-    width  : 50%;
-  }
-
-  &-7 {
-    padding: 0 10px;
-    width  : 58.333333333333336%;
-  }
-
-  &-8 {
-    padding: 0 10px;
-    width  : 66.66666666666667%;
-  }
-
-  &-9 {
-    padding: 0 10px;
-    width  : 75%;
-  }
-
-  &-10 {
-    padding: 0 10px;
-    width  : 83.33333333333334%;
-  }
-
-  &-11 {
-    padding: 0 10px;
-    width  : 91.66666666666667%;
-  }
-
-  &-12 {
-    padding: 0 10px;
-    width  : 100%;
-  }
-}
-
-@media (min-width: 994px) {
-  .admit-col {
-
-    &-1,
-    &-2,
-    &-3,
-    &-4,
-    &-5,
-    &-6,
-    &-7,
-    &-8,
-    &-9,
-    &-10,
-    &-11,
-    &-12 {
-      float  : left;
-      padding: 0 8px;
-    }
-  }
-}
+@import "_animate.scss";
+@import "_buttons.scss";
+@import "_columns.scss";
+@import "_flex.scss";
+@import "_form.scss";
+@import "_spacing.scss";
+@import "_mobile.scss";
 
 .container {
   width        : 100%;
@@ -122,91 +39,32 @@
   }
 }
 
-// Displays - Positions - Hidden
-.admit-flex {
-  display: flex;
-
-  &--container {
-    min-height     : 100vh;
-    padding        : 0 0.5rem;
-    display        : flex;
-    flex-direction : column;
-    justify-content: center;
-    align-items    : center;
-  }
-
-  &--start {
-    -ms-flex-line-pack: start !important;
-    align-content     : flex-start !important;
-  }
-
-  &--end {
-    -ms-flex-line-pack: end !important;
-    align-content     : flex-end !important;
-  }
-
-  &--row {
-    -ms-flex-direction: row !important;
-    flex-direction    : row !important;
-  }
-
-  &--column {
-    -ms-flex-direction: column !important;
-    flex-direction    : column !important;
-  }
-
-  &--row_reverse {
-    -ms-flex-direction: row-reverse !important;
-    flex-direction    : row-reverse !important;
-  }
-
-  &--column_reverse {
-    -ms-flex-direction: column-reverse !important;
-    flex-direction    : column-reverse !important;
-  }
-
-  &--wrap {
-    -ms-flex-wrap: wrap !important;
-    flex-wrap    : wrap !important;
-  }
-
-  &--nowrap {
-    -ms-flex-wrap: nowrap !important;
-    flex-wrap    : nowrap !important;
-  }
-
-  &--wrap_reverse {
-    -ms-flex-wrap: wrap-reverse !important;
-    flex-wrap    : wrap-reverse !important;
-  }
-}
-
-.admit-absolute {
+.adt-absolute {
   position: absolute;
 }
 
-.admit-fixed {
+.adt-fixed {
   position: fixed;
 }
 
-.admit-relative {
+.adt-relative {
   position: relative;
 }
 
-.admit-visible {
+.adt-visible {
   display: block;
 }
 
-.admit-invisible {
+.adt-invisible {
   display: none;
 }
 
-.admit-hidden {
+.adt-hidden {
   overflow: hidden;
 }
 
 // Alinhamento - Posições - Quebra de linha no Texto
-.admit-text {
+.adt-text {
   &--left {
     text-align: left;
   }
@@ -236,7 +94,7 @@
   }
 }
 
-.admit-content {
+.adt-content {
   &--init {
     vertical-align: top;
   }
@@ -270,136 +128,6 @@
   }
 }
 
-.admit-justify--content {
-  &_start {
-    -ms-flex-pack  : start !important;
-    justify-content: flex-start !important;
-  }
-
-  &_end {
-    -ms-flex-pack  : end !important;
-    justify-content: flex-end !important;
-  }
-
-  &_center {
-    -ms-flex-pack  : center !important;
-    justify-content: center !important;
-  }
-
-  &_between {
-    -ms-flex-pack  : justify !important;
-    justify-content: space-between !important;
-  }
-
-  &_around {
-    -ms-flex-pack  : distribute !important;
-    justify-content: space-around !important;
-  }
-}
-
-.admit-align--items {
-  &_start {
-    -ms-flex-align: start !important;
-    align-items   : flex-start !important;
-  }
-
-  &_end {
-    -ms-flex-align: end !important;
-    align-items   : flex-end !important;
-  }
-
-  &_center {
-    -ms-flex-align: center !important;
-    align-items   : center !important;
-  }
-
-  &_baseline {
-    -ms-flex-align: baseline !important;
-    align-items   : baseline !important;
-  }
-
-  &_stretch {
-    -ms-flex-align: stretch !important;
-    align-items   : stretch !important;
-  }
-}
-
-// Espaçamentos
-.admit-padding {
-
-  &--site {
-    padding: 0 8%;
-  }
-
-  &--top_bottom {
-    padding: 4% 0;
-  }
-
-  &--top-8 {
-    padding-top: 8%;
-  }
-
-  &--top-4 {
-    padding-top: 4%;
-  }
-
-  &--bottom-2 {
-    padding-bottom: 2%;
-  }
-
-  &--bottom-4 {
-    padding-bottom: 4%;
-  }
-
-  &--bottom-8 {
-    padding-bottom: 8%;
-  }
-
-  &--bottom-10 {
-    padding-bottom: 10px;
-  }
-
-  &-4-8 {
-    padding: 4% 8%;
-  }
-
-  &-2-8 {
-    padding: 2% 8%;
-  }
-
-  &-2-8-4 {
-    padding: 2% 8% 4%;
-  }
-
-  &-0 {
-    padding: 0;
-  }
-
-  &--right-0 {
-    padding-right: 0;
-  }
-
-  &--right-8 {
-    padding-right: 8%;
-  }
-
-  &--right-20 {
-    padding-right: 20px;
-  }
-
-  &--left-15 {
-    padding-left: 15%;
-  }
-
-  &--left-10 {
-    padding-left: 10px;
-  }
-
-  &--left-0 {
-    padding-left: 0;
-  }
-}
-
 // Títulos
 h1,
 h2,
@@ -407,188 +135,49 @@ h3,
 h4,
 h5,
 h6,
-.admit-title {
+.adt-title {
   font-weight: normal;
   line-height: 1;
 }
 
 h1,
-.admit-title-h1 {
+.adt-title-h1 {
   font-size: 2.5rem;
 }
 
 h2,
-.admit-title-h2 {
+.adt-title-h2 {
   font-size: 2rem;
 }
 
 h3,
-.admit-title-h3 {
+.adt-title-h3 {
   font-size: 1.75rem;
 }
 
 h4,
-.admit-title-h4 {
+.adt-title-h4 {
   font-size: 1.5rem;
 }
 
 h5,
-.admit-title-h5 {
+.adt-title-h5 {
   font-size: 1.25rem;
 }
 
 h6,
-.admit-title-h6 {
+.adt-title-h6 {
   font-size: 1rem;
 }
 
-// Botões
-.admit-btn {
-  display            : inline-block;
-  color              : #212529;
-  text-align         : center;
-  vertical-align     : middle;
-  -webkit-user-select: none;
-  -moz-user-select   : none;
-  -ms-user-select    : none;
-  user-select        : none;
-  background-color   : transparent;
-  border             : 1.2px solid transparent;
-  padding            : 8px 16px;
-  font-size          : 14px;
-  transition         : color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  border-radius      : 30px;
-  cursor             : pointer;
-  min-width          : 80px;
-  margin-top         : 5px;
-
-  &--lead {
-    color           : #fff;
-    background-color: var(--color-lead);
-
-    &:hover {
-      background-color: var(--color-lead-dark);
-    }
-
-    &:active {
-      background-color: var(--color-lead-dark-after);
-    }
-  }
-
-  &--lead_reversed {
-    color       : var(--color-lead);
-    border-color: var(--color-lead);
-
-    &:hover {
-      color           : #fff;
-      background-color: var(--color-lead-dark);
-    }
-
-    &:active {
-      background-color: var(--color-lead-dark-after);
-    }
-  }
-
-  &--green {
-    color           : #fff;
-    background-color: green;
-  }
-
-  &--yellow {
-    background-color: yellow;
-  }
-
-  &--blue {
-    color           : #fff;
-    background-color: var(--color-blue);
-
-    &:hover {
-      background-color: var(--color-blue-dark);
-    }
-
-    &:active {
-      background-color: var(--color-blue-dark-after);
-    }
-  }
-
-  &--blue_reversed {
-    color       : var(--color-blue);
-    border-color: var(--color-blue);
-
-    &:hover {
-      color           : #fff;
-      background-color: var(--color-blue);
-    }
-
-    &:active {
-      background-color: var(--color-blue-dark);
-    }
-  }
-
-  &--red {
-    color           : #fff;
-    background-color: var(--color-red);
-
-    &:hover {
-      background-color: var(--color-red-dark);
-    }
-
-    &:active {
-      background-color: var(--color-red-dark-after);
-    }
-  }
-
-  &--red_reversed {
-    color       : var(--color-red);
-    border-color: var(--color-red);
-
-    &:hover {
-      color           : #fff;
-      background-color: var(--color-red);
-    }
-
-    &:active {
-      background-color: var(--color-red-dark-after);
-    }
-  }
-
-  &--group {
-    width: 100%;
-
-    &_left {
-      float        : left;
-      width        : 50%;
-      border-radius: 30px 0 0 30px;
-    }
-
-    &_right {
-      float        : right;
-      width        : 50%;
-      border-radius: 0 30px 30px 0;
-    }
-  }
-
-  &-100 {
-    width: 100%;
-  }
-
-  &-30 {
-    width: 30%;
-  }
-
-  &-50 {
-    width: 50%;
-  }
-}
-
 // Imagens
-.admit-image {
+.adt-image {
   max-width: 100%;
   height   : auto;
 }
 
 // Dinheiro
-.admit-money {
+.adt-money {
   margin     : 0;
   position   : relative;
   font-weight: 700;
@@ -597,131 +186,4 @@ h6,
     font-weight: 400;
     position   : relative;
   }
-}
-
-// Fomulários - Inputs - Labels 
-.admit-form {
-  border       : 1px solid transparent;
-  border-radius: 10px;
-  margin       : 0;
-  padding      : 8px;
-
-  &--label {
-    display  : inline-block;
-    font-size: 11px;
-    position : relative;
-    top      : 2px;
-    left     : 18px;
-  }
-
-  &--input {
-    padding      : 8px 16px;
-    background   : #f9f9f9;
-    border-radius: 30px;
-    border       : 1px solid transparent;
-    color        : #222;
-    margin       : 5px 0;
-    width        : 100%;
-
-    &::placeholder {
-      color    : #999;
-      font-size: 13px;
-    }
-
-    &_file {
-      cursor  : pointer;
-      position: relative;
-      min-width  : 41.66666666666667%;
-
-      & .msg-file {
-        color    : #999;
-        font-size: 13px;
-      }
-
-      & i {
-        position : absolute!important;
-        font-size: 13px!important;
-        right    : 0;
-        padding  : 7px 13px;
-      }
-
-      & .input-file {
-        width   : 0px;
-        height  : 0px;
-        overflow: hidden;
-      }
-    }
-  }
-
-  &--check {
-    border: 1px solid var(--color-red-dark);
-    padding: 0 9px;
-    margin-right: 4px;
-    border-radius: 5px;
-    cursor: pointer;
-    float: left;
-    margin-top: 2px;
-    height: 20px;
-    position: relative;
-
-    & i {
-      color: #fff!important;
-      left:3px;
-      position: absolute!important;
-      font-size: 13px!important;
-    }
-  }
-
-  & .admit-btn {
-    margin-left: auto;
-  }
-
-  &--info {
-    padding  : 15px 0 0 20px;
-    font-size: 11px;
-  }
-
-  & i {
-    font-size: 6px;
-    color    : var(--color-red);
-    position : relative;
-    bottom   : 3px;
-  }
-}
-
-// Animações
-.admit-animate {
-  display: none
-}
-
-.admit-animate-left-to-right {
-  display: none
-}
-
-.admit-animate-right-to-left {
-  display: none
-}
-
-.admit-animate-top-to-bottom {
-  display: none
-}
-
-.admit-animate-bottom-to-top {
-  display: none
-}
-
-.admit-animate-scale {
-  display: none
-}
-
-.admit-animate-grayscale {
-  display: none
-}
-
-.admit-style-gradient {
-  display: none
-}
-
-.admit-style-radius {
-  display: none
 }

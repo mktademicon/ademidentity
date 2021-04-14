@@ -1,0 +1,274 @@
+// Animações
+.adt-animate {
+  width                    : 100px;
+  height                   : 100px;
+  background               : rgb(126, 123, 123);
+  animation                : changer 4s;
+  animation-iteration-count: 7;
+
+  @-webkit-keyframes changer {
+    from {
+      background-color: var(--color-red)
+    }
+
+    to {
+      background-color: var(--color-blue);
+    }
+  }
+
+  @keyframes changer {
+    from {
+      background-color: var(--color-red)
+    }
+
+    to {
+      background-color: var(--color-blue);
+    }
+  }
+
+  &--left_to_right {
+    width     : 100px;
+    height    : 100px;
+    background: rgb(47, 10, 150);
+    animation : 3s linear 1s infinite running toRight;
+
+    @-webkit-keyframes toRight {
+      from {
+        margin-left: -20%
+      }
+
+      to {
+        margin-left: 100%
+      }
+    }
+
+    @keyframes toRight {
+      from {
+        margin-left: -20%
+      }
+
+      to {
+        margin-left: 100%
+      }
+    }
+  }
+
+  &--right_to_left {
+    width     : 100px;
+    height    : 100px;
+    background: rgb(148, 47, 47);
+    animation : 3s linear 1s infinite running toLeft;
+
+    @-webkit-keyframes toLeft {
+      from {
+        margin-right: -20%
+      }
+
+      to {
+        margin-right: 100%
+      }
+    }
+
+    @keyframes toLeft {
+      from {
+        margin-right: -20%
+      }
+
+      to {
+        margin-right: 100%
+      }
+    }
+  }
+
+  &--top_to_bottom {
+    width     : 100px;
+    height    : 100px;
+    background: rgb(126, 123, 123);
+    animation : 5s ease-in both infinite toBottom;
+    position  : relative;
+
+    @-webkit-keyframes toBottom {
+      0% {
+        bottom: 0px;
+        top   : 0px;
+      }
+
+      50% {
+        bottom: 200px;
+        top   : 0px;
+      }
+
+      100% {
+        bottom: 0px;
+        top   : 200px;
+      }
+    }
+
+    @keyframes toBottom {
+      0% {
+        bottom: 0px;
+        top   : 0px;
+      }
+
+      50% {
+        bottom: 200px;
+        top   : 0px;
+      }
+
+      100% {
+        bottom: 0px;
+        top   : 200px;
+      }
+    }
+  }
+
+  &--bottom_to_top {
+    width     : 100px;
+    height    : 100px;
+    background: rgb(148, 47, 47);
+    animation : 3s linear infinite toTop;
+    position  : relative;
+
+    @-webkit-keyframes toTop {
+      0% {
+        bottom: 0px;
+        top   : 150%;
+      }
+
+      100% {
+        bottom: 100%;
+        top   : 0;
+      }
+    }
+
+    @keyframes toTop {
+      0% {
+        bottom: 0px;
+        top   : 150%;
+      }
+
+      100% {
+        bottom: 100%;
+        top   : 0;
+      }
+    }
+  }
+
+  &--scale {
+    width                    : 100px;
+    height                   : 100px;
+    background               : rgb(245, 188, 65);
+    animation                : scaler 4s;
+    animation-iteration-count: infinite;
+
+    @-webkit-keyframes scaler {
+      from {
+        transform: scale(0);
+      }
+
+      to {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes scaler {
+      from {
+        transform: scale(0);
+      }
+
+      to {
+        transform: scale(1);
+      }
+    }
+  }
+
+  &--grayscale {
+    width     : 100px;
+    height    : 100px;
+    background: rgb(245, 188, 65);
+    animation : 5s infinite grayscaler;
+
+    @-webkit-keyframes grayscaler {
+      from {
+        filter: grayscale(0);
+      }
+
+      to {
+        filter: grayscale(1);
+      }
+    }
+
+    @keyframes grayscaler {
+      from {
+        filter: grayscale(0);
+      }
+
+      to {
+        filter: grayscale(1);
+      }
+    }
+  }
+
+  &--style_gradient {
+    width          : 100px;
+    height         : 100px;
+    background     : linear-gradient(-45deg, var(--color-orange), var(--color-red), var(--color-blue-volare), var(--color-lead));
+    background-size: 200% 200%;
+    animation      : gradienter 15s ease infinite;
+
+    @-webkit-keyframes gradienter {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @keyframes gradienter {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  }
+
+  &--style_radius {
+    width     : 100px;
+    height    : 100px;
+    background: var(--color-lead);
+    animation : radius 5s linear infinite;
+
+    @-webkit-keyframes radius {
+      from {
+        border-radius: 0;
+      }
+
+      to {
+        border-radius: 100%
+      }
+    }
+
+    @keyframes radius {
+      from {
+        border-radius: 0;
+      }
+
+      to {
+        border-radius: 100%
+      }
+    }
+  }
+}
