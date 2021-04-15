@@ -16,7 +16,7 @@
   
   👉 [https://cdn.jsdelivr.net/gh/MaxAdemicon/ademidentity@latest/js/library.js](https://cdn.jsdelivr.net/gh/MaxAdemicon/ademidentity@latest/js/library.js)
 
-  Para usar basta colar os links no `head` de sua `index`. Na raiz do projeto há um exemplo demostrativo.
+Para usar basta colar os links no `head` de sua `index`. Na raiz do projeto há um exemplo demostrativo.
 
   ```html
     <!-- Estilos css -->
