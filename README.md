@@ -1,16 +1,19 @@
 # Ademidentity
 
-> Padrão de estilos Ademicon
+ Padrão de estilos Ademicon
 
 ## Ademidentity com CDN
 
 + Estilos css
+  
   👉 [https://cdn.jsdelivr.net/gh/MaxAdemicon/ademidentity@latest/css/theme.css](https://cdn.jsdelivr.net/gh/MaxAdemicon/ademidentity@latest/css/theme.css)
 
 + JavaScript necessário para alguns recursos
+  
   👉 [https://cdn.jsdelivr.net/gh/MaxAdemicon/ademidentity@latest/js/scripts.js](https://cdn.jsdelivr.net/gh/MaxAdemicon/ademidentity@latest/js/scripts.js)
   
 + JQuery 3.5.1 compilado e minimizado necessário para alguns recursos
+  
   👉 [https://cdn.jsdelivr.net/gh/MaxAdemicon/ademidentity@latest/js/library.js](https://cdn.jsdelivr.net/gh/MaxAdemicon/ademidentity@latest/js/library.js)
 
   ```html
