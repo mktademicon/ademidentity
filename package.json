@@ -1,12 +1,10 @@
 {
-  "name": "@maxademicon/ademidentity",
-  "version": "1.0.6",
+  "name": "ademidentity",
+  "version": "1.0.0",
   "description": "Design System to Ademicon",
-  "author": "Max Ademicon <max.silva@ademicon.com.br>",
-  "homepage": "https://github.com/MaxAdemicon/ademidentity#readme",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "none"
   },
   "repository": {
     "type": "git",
@@ -18,11 +16,13 @@
     "node",
     "php"
   ],
+  "author": "Mkt Ademicon <max.silva@ademicon.com.br>",
+  "license": "MIT",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/MaxAdemicon/ademidentity/issues"
-  }
+  },
+  "homepage": "https://github.com/MaxAdemicon/ademidentity#readme"
 }
