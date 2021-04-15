@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaxAdemicon/ademidentity.git"
+    "url": "git+https://github.com/mktademicon/ademidentity.git"
   },
   "keywords": [
     "css",
@@ -22,7 +22,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "bugs": {
-    "url": "https://github.com/MaxAdemicon/ademidentity/issues"
+    "url": "https://github.com/mktademicon/ademidentity/issues"
   },
-  "homepage": "https://github.com/MaxAdemicon/ademidentity#readme"
+  "homepage": "https://github.com/mktademicon/ademidentity#readme"
 }
