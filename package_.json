@@ -1,6 +1,6 @@
 {
-  "name": "ademidentity",
-  "version": "1.0.3",
+  "name": "@mktademicon/ademidentity",
+  "version": "1.0.7",
   "description": "Design System to Ademicon",
   "main": "index.html",
   "scripts": {
@@ -18,6 +18,9 @@
   ],
   "author": "Mkt Ademicon <max.silva@ademicon.com.br>",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "bugs": {
     "url": "https://github.com/mktademicon/ademidentity/issues"
   },
