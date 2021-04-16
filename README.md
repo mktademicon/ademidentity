@@ -46,9 +46,9 @@ Para aplicações em node use nossa lib com [gerenciadores de pacotes](https://w
 
 + yarn
 
-```bash
-  yarn add ademidentity
-```
+  ```bash
+    yarn add ademidentity
+  ```
 
 ## Estrutura de arquivos e pastas
 
