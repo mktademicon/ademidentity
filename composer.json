@@ -9,6 +9,6 @@
             "email": "max.silva@ademicon.com.br"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {}
 }
