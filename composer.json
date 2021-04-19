@@ -1,0 +1,14 @@
+{
+    "name": "mktademicon/ademidentity",
+    "description": "Design System to Ademicon",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mkt Ademicon",
+            "email": "max.silva@ademicon.com.br"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
