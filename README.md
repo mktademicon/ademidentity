@@ -34,9 +34,9 @@ Para usar basta colar os links no `head` de sua `index`. Na raiz do projeto há 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   ```
 
-## Ademidentity via npm ou yarn
+## Ademidentity via gerenciadores de pacotes
 
-Para aplicações em node use nossa lib com [gerenciadores de pacotes](https://www.npmjs.com/package/ademidentity)
+Para aplicações em node use nossa lib com [npm](https://www.npmjs.com/package/ademidentity) ou [yarn](https://yarnpkg.com/package/ademidentity)
 
 + npm
 
