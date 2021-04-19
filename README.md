@@ -53,6 +53,7 @@ Para aplicações em node use nossa lib com [npm](https://www.npmjs.com/package/
 ## Ademidentity via composer
 
 Para aplicações em php use nossa lib com [composer](https://packagist.org/packages/mktademicon/ademidentity)
+
 **Nota**: necessário "minimum-stability": "dev"
 
 + composer
