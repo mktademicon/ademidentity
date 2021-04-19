@@ -8,15 +8,15 @@ Sem precisar de download use nossa lib com [jsDelivr](https://www.jsdelivr.com/)
 
 + Estilos css
 
-  👉 [https://cdn.jsdelivr.net/gh/mktademicon/ademidentity/css/theme.css](https://cdn.jsdelivr.net/gh/mktademicon/ademidentity/css/theme.css)
+  👉 [https://cdn.jsdelivr.net/gh/mktademicon/ademidentity@1.0.7/css/theme.css](https://cdn.jsdelivr.net/gh/mktademicon/ademidentity@1.0.7/css/theme.css)
 
 + JavaScript necessário para alguns recursos
   
-  👉 [https://cdn.jsdelivr.net/gh/mktademicon/ademidentity/js/scripts.js](https://cdn.jsdelivr.net/gh/mktademicon/ademidentity/js/scripts.js)
+  👉 [https://cdn.jsdelivr.net/gh/mktademicon/ademidentity@1.0.7/js/scripts.js](https://cdn.jsdelivr.net/gh/mktademicon/ademidentity@1.0.7/js/scripts.js)
   
 + JQuery 3.5.1 compilado e minimizado necessário para alguns recursos
   
-  👉 [https://cdn.jsdelivr.net/gh/mktademicon/ademidentity/js/library.js](https://cdn.jsdelivr.net/gh/mktademicon/ademidentity/js/library.js)
+  👉 [https://cdn.jsdelivr.net/gh/mktademicon/ademidentity@1.0.7/js/library.js](https://cdn.jsdelivr.net/gh/mktademicon/ademidentity@1.0.7/js/library.js)
 
 Para usar basta colar os links no `head` de sua `index`. Na raiz do projeto há um exemplo demostrativo.
 
@@ -36,7 +36,7 @@ Para usar basta colar os links no `head` de sua `index`. Na raiz do projeto há 
 
 ## Ademidentity via gerenciadores de pacotes
 
-Para aplicações em node use nossa lib com [npm](https://www.npmjs.com/package/ademidentity) ou [yarn](https://yarnpkg.com/package/ademidentity)
+Para aplicações em node use nossa lib com [npm](https://www.npmjs.com/package/ademidentity@latest) ou [yarn](https://yarnpkg.com/package/ademidentity)
 
 + npm
 
