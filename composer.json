@@ -1,5 +1,6 @@
 {
     "name": "mktademicon/ademidentity",
+    "version": "1.0.7",
     "description": "Design System to Ademicon",
     "type": "library",
     "license": "MIT",
