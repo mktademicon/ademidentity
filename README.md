@@ -4,7 +4,7 @@
 
 ## Ademidentity via CDN jsDelivr
 
-Sem precisar de download use nossa lib com [https://www.jsdelivr.com/](jsDelivr)
+Sem precisar de download use nossa lib com [jsDelivr](https://www.jsdelivr.com/)
 
 + Estilos css
 
