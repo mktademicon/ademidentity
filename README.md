@@ -50,6 +50,17 @@ Para aplicações em node use nossa lib com [npm](https://www.npmjs.com/package/
     yarn add ademidentity
   ```
 
+## Ademidentity via composer
+
+Para aplicações em php use nossa lib com [composer](https://packagist.org/packages/mktademicon/ademidentity)
+**Nota**: necessário "minimum-stability": "dev"
+
++ composer
+
+  ```bash
+    composer require mktademicon/ademidentity
+  ```
+
 ## Estrutura de arquivos e pastas
 
 ```bash
