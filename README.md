@@ -28,7 +28,7 @@ Para usar basta colar os links no `head` de sua `index`. Na raiz do projeto há 
     <script src="https://cdn.jsdelivr.net/gh/mktademicon/ademidentity@1.0.7/js/scripts.js" type="text/javascript"></script>
     
     <!-- JQuery 3.5.1 compilado e minimizado necessário para alguns recursos -->
-    <script src="https://cdn.jsdelivr.net/gh/mktademicon/ademidentity@1.0.7/js/library.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mktademicon/ademidentity/js/library.js" type="text/javascript"></script>
     
     <!-- Font Awesome necessário para alguns recursos -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
