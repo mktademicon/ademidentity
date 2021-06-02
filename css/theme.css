@@ -878,11 +878,11 @@ body {
 }
 
 .adt-visible {
-  display: block;
+  display: block !important;
 }
 
 .adt-invisible {
-  display: none;
+  display: none !important;
 }
 
 .adt-hidden {
@@ -890,25 +890,25 @@ body {
 }
 
 .adt-text--left {
-  text-align: left;
+  text-align: left !important;
 }
 .adt-text--center {
-  text-align: center;
+  text-align: center !important;
 }
 .adt-text--right {
-  text-align: right;
+  text-align: right !important;
 }
 .adt-text--justify {
-  text-align: justify;
+  text-align: justify !important;
 }
 .adt-text--nowrap {
-  white-space: nowrap;
+  white-space: nowrap !important;
 }
 .adt-text--wrap {
-  white-space: normal;
+  white-space: normal !important;
 }
 .adt-text--bolder {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .adt-content--init {
