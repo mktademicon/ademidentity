@@ -22,10 +22,10 @@ Para usar basta colar os links no `head` de sua `index`. Na raiz do projeto há 
 
   ```html
     <!-- Estilos css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mktademicon/ademidentity@1.0.7/css/theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mktademicon/ademidentity@1/css/theme.min.css" />
     
     <!-- JavaScript necessário para alguns recursos -->
-    <script src="https://cdn.jsdelivr.net/gh/mktademicon/ademidentity@1.0.7/js/scripts.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mktademicon/ademidentity@1.0.7/js/scripts.min.js" type="text/javascript"></script>
     
     <!-- JQuery 3.5.1 compilado e minimizado necessário para alguns recursos -->
     <script src="https://cdn.jsdelivr.net/gh/mktademicon/ademidentity/js/library.js" type="text/javascript"></script>
