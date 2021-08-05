@@ -52,11 +52,11 @@
 }
 
 .adt-visible {
-  display: block!important;
+  display: block;
 }
 
 .adt-invisible {
-  display: none!important;
+  display: none;
 }
 
 .adt-hidden {
@@ -66,31 +66,31 @@
 // Alinhamento - Posições - Quebra de linha no Texto
 .adt-text {
   &--left {
-    text-align: left!important;
+    text-align: left;
   }
 
   &--center {
-    text-align: center!important;
+    text-align: center;
   }
 
   &--right {
-    text-align: right!important;
+    text-align: right;
   }
 
   &--justify {
-    text-align: justify!important;
+    text-align: justify;
   }
 
   &--nowrap {
-    white-space: nowrap!important;
+    white-space: nowrap;
   }
 
   &--wrap {
-    white-space: normal!important;
+    white-space: normal;
   }
 
   &--bolder {
-    font-weight: bold!important;
+    font-weight: bold;
   }
 }
 

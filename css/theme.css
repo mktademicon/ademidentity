@@ -434,22 +434,6 @@ body {
   width: 50%;
 }
 
-.adt-nav--tab {
-  cursor: pointer;
-  border: 1px solid #eee;
-  padding: 10px 15px;
-  background: transparent;
-}
-.adt-nav--tab:hover {
-  box-shadow: 0 -5px 15px #ccc;
-}
-.adt-nav--tab:focus {
-  border-bottom: 0px !important;
-}
-.adt-nav--tab:active {
-  border-bottom: 0px !important;
-}
-
 .adt-row {
   display: flex;
   flex-wrap: wrap;
@@ -690,9 +674,6 @@ body {
 .adt-padding--top-4 {
   padding-top: 4%;
 }
-.adt-padding--top-2 {
-  padding-top: 2%;
-}
 .adt-padding--bottom-2 {
   padding-bottom: 2%;
 }
@@ -878,11 +859,11 @@ body {
 }
 
 .adt-visible {
-  display: block !important;
+  display: block;
 }
 
 .adt-invisible {
-  display: none !important;
+  display: none;
 }
 
 .adt-hidden {
@@ -890,25 +871,25 @@ body {
 }
 
 .adt-text--left {
-  text-align: left !important;
+  text-align: left;
 }
 .adt-text--center {
-  text-align: center !important;
+  text-align: center;
 }
 .adt-text--right {
-  text-align: right !important;
+  text-align: right;
 }
 .adt-text--justify {
-  text-align: justify !important;
+  text-align: justify;
 }
 .adt-text--nowrap {
-  white-space: nowrap !important;
+  white-space: nowrap;
 }
 .adt-text--wrap {
-  white-space: normal !important;
+  white-space: normal;
 }
 .adt-text--bolder {
-  font-weight: bold !important;
+  font-weight: bold;
 }
 
 .adt-content--init {

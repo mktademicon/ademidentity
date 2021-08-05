@@ -140,18 +140,3 @@
     width: 50%;
   }
 }
-.adt-nav--tab {
-  cursor: pointer;
-  border:1px solid #eee;
-  padding: 10px 15px;
-  background:transparent;
-  &:hover {
-    box-shadow: 0 -5px 15px  #ccc;
-  }
-  &:focus {
-    border-bottom: 0px!important;
-  }
-  &:active {
-    border-bottom: 0px!important;
-  }
-}

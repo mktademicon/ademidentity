@@ -1,6 +1,6 @@
 {
-  "name": "ademidentity",
-  "version": "1.0.8",
+  "name": "@mktademicon/ademidentity",
+  "version": "1.0.0",
   "description": "Design System to Ademicon",
   "main": "index.html",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mktademicon/ademidentity.git"
+    "url": "git+https://github.com/MaxAdemicon/ademidentity.git"
   },
   "keywords": [
     "css",
@@ -18,8 +18,11 @@
   ],
   "author": "Mkt Ademicon <max.silva@ademicon.com.br>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mktademicon/ademidentity/issues"
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
-  "homepage": "https://github.com/mktademicon/ademidentity#readme"
+  "bugs": {
+    "url": "https://github.com/MaxAdemicon/ademidentity/issues"
+  },
+  "homepage": "https://github.com/MaxAdemicon/ademidentity#readme"
 }
