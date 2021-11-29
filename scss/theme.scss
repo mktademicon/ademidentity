@@ -6,6 +6,7 @@
 @import "_form.scss";
 @import "_spacing.scss";
 @import "_mobile.scss";
+@import "_carousel.scss";
 
 .container {
   width        : 100%;
@@ -51,16 +52,20 @@
   position: relative;
 }
 
-.adt-visible {
+.adt-desktop--show {
   display: block;
 }
 
-.adt-invisible {
+.adt-desktop--hide {
   display: none;
 }
 
 .adt-hidden {
   overflow: hidden;
+}
+
+.disabled {
+  opacity: .3;
 }
 
 // Alinhamento - Posições - Quebra de linha no Texto

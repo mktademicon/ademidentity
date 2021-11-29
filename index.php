@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="https://ademicon.com.br/wp-content/themes/ademicon/assets/images/favicon-ademicon.png" />
   <title>Ademidentity</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/css/theme.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/css/theme.css" /> -->
+  <link rel='stylesheet' href='./css/theme.css' />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <script src="https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/js/library.js" type="text/javascript"></script>
-  <script src="https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/js/scripts.js" type="text/javascript"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/js/scripts.js" type="text/javascript"></script> -->
+  <script src='./js/scripts.js' type='text/javascript'></script>
+  <script src='./js/plugin-scroll.js' type='text/javascript'></script>
 </head>
 
 <body>
@@ -33,6 +36,9 @@
           <button class='adt-btn adt-btn--red_reversed'>--red_reversed</button>
           <button class='adt-btn adt-btn--blue_reversed'>--blue_reversed</button>
           <button class='adt-btn adt-btn--lead_reversed'>--lead_reversed</button>
+          <div style="background-color: #c1c1c1;">
+            <button class='adt-btn adt-btn--transparent'>--transparent</button>
+          </div>
         </div>
       </div>
       <div class='adt-col-4 adt-col--sm-12'>
@@ -59,6 +65,13 @@
           <input class='adt-form--input' type='text' placeholder='Texto' />
           <label class='adt-form--label'>Texto:</label>
           <input class='adt-form--input' type='text' placeholder='Texto' />
+          <label class='adt-form--label'>Select</label>
+          <select class='adt-form--select' placeholder="Select">
+            <option value="" disabled selected hidden>Select</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
           <div class='adt-row'>
             <div class='adt-col-6 adt-flex adt-align--items_center adt-justify--content_center'>
               <span id='checkbox' class="adt-form--check" data-status="false" onclick="check()">
@@ -123,6 +136,54 @@
         <div class='adt-animate--style_radius'></div>
       </div>
       <div class='adt-col-1 adt-col--sm-none'></div>
+    </section>
+    
+    <script>
+      $(document).ready(() => {
+        setTimeout(() => {
+          animateScroll('planos')
+          animateScroll('dif_planos','dif_planos',4)
+        }, 500)
+      })
+    </script>
+
+    <section class='adt-row adt-padding-4-8'>
+      <div class='adt-col-12 adt-text--center'>Carousel</div>
+      <div class='adt-col-2'></div>
+      <div class='adt-relative adt-col-8'>
+        <a class="item-left planos-nav-prev disabled" href="javascript:;" onclick="navigateScroll('planos','prev')"><i class="fas fa-chevron-left"></i></a>
+        <a class="item-right planos-nav-next" href="javascript:;" onclick="navigateScroll('planos','next')"><i class="fas fa-chevron-right"></i></a>
+        <div class="planos-itens itens adt-col--sm-10">
+          <div class="planos-box box" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)" ontouchend="touchEnd(event,'planos')">
+            <?php
+              for ($i=0; $i < 5; $i++) { 
+            ?>
+                <div class="planos-item item">
+                  <div class='img' style='background: var(--color-red) center center / contain no-repeat;width:90%;height:100px;margin:0 auto;'></div>
+                </div>
+            <?php } ?>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='adt-row adt-padding-4-8'>
+      <div class='adt-col-12 adt-text--center'>Carousel Personalizando Exibição</div>
+      <div class='adt-col-2'></div>
+      <div class='adt-relative adt-col-8'>
+        <a class="item-left dif_planos-nav-prev disabled" href="javascript:;" onclick="navigateScroll('dif_planos','prev')"><i class="fas fa-chevron-left"></i></a>
+        <a class="item-right dif_planos-nav-next" href="javascript:;" onclick="navigateScroll('dif_planos','next')"><i class="fas fa-chevron-right"></i></a>
+        <div class="dif_planos-itens itens adt-col--sm-10">
+          <div class="dif_planos-box box" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)" ontouchend="touchEnd(event,'dif_planos')">
+            <?php
+              for ($i=0; $i < 5; $i++) { 
+            ?>
+                <div class="dif_planos-item item">
+                  <div class='img' style='background: var(--color-red) center center / contain no-repeat;width:90%;height:100px;margin:0 auto;'></div>
+                </div>
+            <?php } ?>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer>footer</footer>

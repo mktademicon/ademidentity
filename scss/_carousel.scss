@@ -1,0 +1,37 @@
+/*Carousel*/
+.box {
+  width:100%;
+  transition:right 1s;
+  right:0;
+  position:relative;
+}
+
+.item {
+  width: 100%;
+  margin: 0 10px;
+  padding: 10px;
+  min-height: 120px;
+  float: left;
+  
+  &-left {
+    position: absolute;
+    top: 45%;
+    left: 1%;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  &-right {
+    position: absolute;
+    top: 45%;
+    right: 1%;
+    cursor: pointer;
+    z-index: 2;
+  }
+}
+
+.itens {
+  width:100%;
+  overflow:hidden;
+  padding-left: 20px;
+}

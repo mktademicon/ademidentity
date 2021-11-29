@@ -1,4 +1,11 @@
 @media screen and (max-width:994px) {
+  .adt-mobile-show {
+    display: block;
+  }
+  .adt-mobile-hide{
+    display: none;
+  }
+
   .adt-col {
     &--sm-none {
       -ms-flex: 0 ;
