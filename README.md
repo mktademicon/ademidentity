@@ -24,6 +24,9 @@ Para usar basta colar os links no `head` de sua `index`. Na raiz do projeto há 
     
     <!-- JavaScript necessário para alguns recursos -->
     <script src="https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/js/scripts.js" type="text/javascript"></script>
+
+    <!-- JavaScript necessário para carousel -->
+    <script src="https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/js/plugin-scroll.js" type="text/javascript"></script>
     
     <!-- JQuery 3.5.1 compilado e minimizado necessário para alguns recursos -->
     <script src="https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/js/library.js" type="text/javascript"></script>
@@ -43,17 +46,19 @@ ademidentity/
 │   └── theme.css.map
 ├── js/
 │   ├── library.js
+│   ├── plugin-scroll.js
 │   └── script.js
 ├── scss/
 │   ├── _animate.scss
 │   ├── _buttons.scss
 │   ├── _columns.scss
+│   ├── _carousel.scss
 │   ├── _flex.scss
 │   ├── _form.scss
 │   ├── _mobile.scss
 │   ├── _spacing.scss
 │   ├── globals.scss
 │   └── theme.scss
-├── index.html
+├── index.php
 └── READEME.md
 ```
