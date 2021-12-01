@@ -11,6 +11,10 @@
 + JavaScript necessário para alguns recursos
   
   👉 [https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/js/scripts.js](https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/js/scripts.js)
+
++ JavaScript necessário para carousel
+  
+  👉 [https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/js/plugin-scroll.js](https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/js/plugin-scroll.js)
   
 + JQuery 3.5.1 compilado e minimizado necessário para alguns recursos
   

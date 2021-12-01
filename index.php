@@ -14,7 +14,6 @@
   <script src='./js/scripts.js' type='text/javascript'></script>
   <script src='./js/plugin-scroll.js' type='text/javascript'></script>
 </head>
-
 <body>
   <header class="adt-text--center adt-padding-2-8-4">header HEADER</header>
   <main>

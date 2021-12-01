@@ -1,14 +1,14 @@
 {
-  "name": "@mktademicon/ademidentity",
-  "version": "1.0.0",
+  "name": "@salesgrowthademicon/ademidentity",
+  "version": "1.1.8",
   "description": "Design System to Ademicon",
-  "main": "index.html",
+  "main": "index.php",
   "scripts": {
     "test": "none"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaxAdemicon/ademidentity.git"
+    "url": "git+https://github.com/salesgrowthademicon/ademidentity.git"
   },
   "keywords": [
     "css",
@@ -16,13 +16,13 @@
     "node",
     "php"
   ],
-  "author": "Mkt Ademicon <max.silva@ademicon.com.br>",
+  "author": "Sales Growth Ademicon <max.silva@ademicon.com.br>",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "bugs": {
-    "url": "https://github.com/MaxAdemicon/ademidentity/issues"
+    "url": "https://github.com/salesgrowthademicon/ademidentity/issues"
   },
-  "homepage": "https://github.com/MaxAdemicon/ademidentity#readme"
+  "homepage": "https://github.com/salesgrowthademicon/ademidentity#readme"
 }
