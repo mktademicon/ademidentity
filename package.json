@@ -19,7 +19,7 @@
   "author": "Sales Growth Ademicon <max.silva@ademicon.com.br>",
   "license": "MIT",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/"
   },
   "bugs": {
     "url": "https://github.com/salesgrowthademicon/ademidentity/issues"
