@@ -1,4 +1,3 @@
-index.html
-index.php
-package.json
-package_.json
+/index.php
+/.npmrc-github
+/package-github.json

@@ -39,6 +39,34 @@ Para usar basta colar os links no `head` de sua `index`. Na raiz do projeto há 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   ```
 
+## Ademidentity via gerenciadores de pacotes
+
+Para aplicações em node use nossa lib com [npm](https://www.npmjs.com/package/ademidentity@latest) ou [yarn](https://yarnpkg.com/package/ademidentity)
+
++ npm
+
+  ```bash
+    npm install ademidentity
+  ```
+
++ yarn
+
+  ```bash
+    yarn add ademidentity
+  ```
+
+## Ademidentity via composer
+
+Para aplicações em php use nossa lib com [composer](https://packagist.org/packages/mktademicon/ademidentity)
+
+**Nota**: necessário "minimum-stability": "dev"
+
++ composer
+
+  ```bash
+    composer require mktademicon/ademidentity
+  ```
+
 ## Estrutura de arquivos e pastas
 
 ```bash
