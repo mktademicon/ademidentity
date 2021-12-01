@@ -1,4 +1,4 @@
 /vendor/
-/index.php
-/.npmrc-github
-/package-github.json
+index.php
+.npmrc-github
+package-github.json
