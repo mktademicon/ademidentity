@@ -6,13 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="https://ademicon.com.br/wp-content/themes/ademicon/assets/images/favicon-ademicon.png" />
   <title>Ademidentity</title>
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/css/theme.css" /> -->
-  <link rel='stylesheet' href='./css/theme.css' />
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <!-- Estilos css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/css/theme.css" />
+
+  <!-- JavaScript necessário para alguns recursos -->
+  <script src="https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/js/scripts.js" type="text/javascript"></script>
+
+  <!-- JavaScript necessário para carousel -->
+  <script src="https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/js/plugin-scroll.js" type="text/javascript"></script>
+  
+  <!-- JQuery 3.5.1 compilado e minimizado necessário para alguns recursos -->
   <script src="https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/js/library.js" type="text/javascript"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/gh/salesgrowthademicon/ademidentity@latest/js/scripts.js" type="text/javascript"></script> -->
-  <script src='./js/scripts.js' type='text/javascript'></script>
-  <script src='./js/plugin-scroll.js' type='text/javascript'></script>
+  
+  <!-- Font Awesome necessário para alguns recursos -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
   <header class="adt-text--center adt-padding-2-8-4">header HEADER</header>
